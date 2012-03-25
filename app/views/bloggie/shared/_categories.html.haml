@@ -1,0 +1,6 @@
+- if @categories.any?
+  %h3 Categories
+  %ul.categories
+    - for category in @categories
+      %li= link_to category.name, category 
+    
