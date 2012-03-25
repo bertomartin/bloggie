@@ -1,10 +1,3 @@
 = render 'bloggie/shared/post', post: @post
-%hr
-- if @post.blog_comments.any?
-  %h3 #{@post.blog_comments.count} #{'Comment'.pluralize(@post.blog_comments.count)}
-  - for comment in @post.blog_comments
-    .comment
-      #{comment.name} commented:
-      = BlueCloth.new(comment.body).to_html.html_safe
-  
-
+= render 'bloggie/shared/comments', comments: @comments
+= render 'bloggie/shared/new_comment', post: @post
