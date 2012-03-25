@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency "haml-rails"
   s.add_dependency "stamp"
   s.add_dependency "bluecloth"
+  s.add_dependency "friendly_id"
 
   s.add_development_dependency "sqlite3"
 end

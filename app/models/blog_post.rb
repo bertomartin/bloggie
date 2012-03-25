@@ -1,4 +1,7 @@
 class BlogPost < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+
   has_many :blog_post_categories
   has_many :blog_categories, through: :blog_post_categories
   has_many :blog_comments

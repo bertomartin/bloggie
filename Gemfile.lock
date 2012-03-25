@@ -3,6 +3,7 @@ PATH
   specs:
     bloggie (0.0.1)
       bluecloth
+      friendly_id
       haml-rails
       rails (~> 3.2.2)
       stamp
@@ -41,6 +42,7 @@ GEM
     bluecloth (2.2.0)
     builder (3.0.0)
     erubis (2.7.0)
+    friendly_id (4.0.1)
     haml (3.1.4)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
