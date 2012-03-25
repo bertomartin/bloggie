@@ -1,0 +1,11 @@
+%h2 Some Great Blog!
+%h3= @post.title
+= BlueCloth.new(@post.body).to_html.html_safe
+%hr
+- if @post.blog_comments.any?
+  %h4 #{@post.blog_comments.count} #{'Comment'.pluralize(@post.blog_comments.count)}
+  - for comment in @post.blog_comments
+    .comment
+      #{comment.name} commented:
+      = BlueCloth.new(comment.body).to_html.html_safe
+  

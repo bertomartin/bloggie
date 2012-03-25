@@ -4,7 +4,7 @@ module Bloggie
       source_root File.expand_path('../templates', __FILE__)
 
       def generate_seed
-        post = BlogPost.create(title: 'Your First Blog Post', body: 'Congratulations! This is your first blog post.')
+        post = BlogPost.create(title: 'Your First Blog Post', body: 'Congratulations! This is your first blog post.', published_at: 2.days.ago)
         category = BlogCategory.create(name: 'General')
         category.blog_posts << post
         post.blog_comments.create(name: 'Andrew Culver', body: 'Good job. Please let me know if you had any trouble so the documentation can be improved.', approved: true)

@@ -1,0 +1,7 @@
+%h2 Some Great Blog!
+- for post in @posts
+  %h3= post.title
+  = BlueCloth.new(post.body).to_html.html_safe
+  = link_to 'Permalink', post
+  = link_to 'Comments', blog_post_path(post, anchor: 'comments')
+  
