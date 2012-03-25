@@ -8,7 +8,7 @@ Add the following to your `Gemfile`:
 
     gem 'bloggie', git: 'git@github.com:andrewculver/bloggie.git'
     
-Then run the following:
+Run a couple generators:
 
     $ rails g bloggie:install
     $ rake db:migrate
@@ -16,8 +16,8 @@ Then run the following:
 
 This will:
 
- * create the required migrations
- * mount the engine at `/blog`
- * create a sample post, category, and comment.
+ * Create the required migrations
+ * Mount the engine at `/blog`
+ * Seed the database with a sample post, category, and comment.
 
-**
+Your blog should now be available and you can link to it with the `blog_path` URL helper.

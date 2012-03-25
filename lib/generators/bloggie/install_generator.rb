@@ -16,7 +16,7 @@ module Bloggie
         migration_template "create_blog_comments.rb", "db/migrate/create_blog_comments.rb"
         migration_template "create_blog_post_categories.rb", "db/migrate/create_blog_post_categories.rb"
         migration_template "create_blog_posts.rb", "db/migrate/create_blog_posts.rb"
-        route("mount Bloggie::Engine => '/blog'")
+        route("mount Bloggie::Engine => '/blog', as: 'blog'")
       end
 
     end
