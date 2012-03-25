@@ -1,3 +1,3 @@
 Bloggie::Engine.routes.draw do
-  root :to => 'index#index', controller: Bloggie::IndexController
+  root :to => 'posts#index', controller: Bloggie::PostsController
 end

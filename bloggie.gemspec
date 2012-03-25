@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.2"
+  s.add_dependency "haml"
   s.add_dependency "stamp"
   s.add_dependency "bluecloth"
 
