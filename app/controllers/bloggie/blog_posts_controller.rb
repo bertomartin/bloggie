@@ -1,4 +1,4 @@
-class BlogPostsController < BlogController
+class Bloggie::BlogPostsController < Bloggie::ApplicationController
   def index
     @posts = BlogPost.published.newest
   end
