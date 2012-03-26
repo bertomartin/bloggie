@@ -1,4 +1,4 @@
-class Bloggie::CommentsController < Bloggie::ApplicationController
+class Bloggie::BlogCommentsController < Bloggie::ApplicationController
   def create
     
     if params[:blog_post_id].match /$\d+^/

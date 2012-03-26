@@ -1,6 +1,9 @@
 class Bloggie::BlogPostsController < Bloggie::ApplicationController
   def index
     @posts = BlogPost.published.newest
+    if params['search'].present?
+      @posts = @posts.search(params['search'])
+    end
   end
   def show
     if params[:id].match /$\d+^/
