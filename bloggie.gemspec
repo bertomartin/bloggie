@@ -22,5 +22,8 @@ Gem::Specification.new do |s|
   s.add_dependency "bluecloth"
   s.add_dependency "friendly_id"
 
+  s.add_dependency 'paperclip'
+  s.add_dependency 'paperclip-s3'
+
   s.add_development_dependency "sqlite3"
 end
